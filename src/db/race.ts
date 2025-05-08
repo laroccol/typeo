@@ -9,6 +9,7 @@ export const saveRaceStats = async (uid: string, raceData: RaceSchema) => {
     ...raceData,
     timestamp: FieldValue.serverTimestamp(),
   });
+  
 };
 
 export const saveImprovementRaceStats = async (
