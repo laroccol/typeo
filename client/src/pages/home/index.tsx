@@ -14,6 +14,8 @@ export default function Home() {
     { place: number; name: string; accuracy: number; wpm: number }[]
   >([]);
 
+  console.log('test');
+
   React.useEffect(() => {
     let isMounted = true;
     getLeaderboards().then(({ daily, allTime }) => {
